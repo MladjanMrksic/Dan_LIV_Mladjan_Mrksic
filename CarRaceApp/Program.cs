@@ -11,6 +11,9 @@ namespace CarRaceApp
     {
         static void Main(string[] args)
         {
+            MotorVehicle Truck1 = new Truck();
+            Truck1.
+
         }
     }
 }

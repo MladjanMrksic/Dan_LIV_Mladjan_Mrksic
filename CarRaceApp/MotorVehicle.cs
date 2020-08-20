@@ -8,14 +8,29 @@ namespace CarRaceApp
 {
     abstract class MotorVehicle
     {
-        double engineDisplacemet;
-        int weight;
-        string category;
-        string engineType;
-        string colour;
+        public double engineDisplacemet;
+        public int weight;
+        public string category;
+        public string engineType;
+        public string colour;
 
-        void Go() { }
+        public MotorVehicle(double ED, int W, string C, string ET, string Col)
+        {
+            engineDisplacemet = ED;
+            weight = W;
+            category = C;
+            engineType = ET;
+            colour = Col;
+        }
 
-        void Stop() { }
+        void Go()
+        {
+            Console.WriteLine("Vehicle has started moving.");
+        }
+
+        void Stop()
+        {
+            Console.WriteLine("Vehicle has stopped moving.");
+        }
     }
 }
