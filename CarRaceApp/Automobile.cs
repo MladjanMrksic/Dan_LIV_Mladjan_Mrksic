@@ -16,8 +16,10 @@ namespace CarRaceApp
         public string manufacturer;
         public int traficLicenseNumber;
         public Thread carThread;
+        public int fuelLeft;
+        public int fuelConsumption;
 
-        public Automobile(string RN, int NOD, int TV, string TT, string Man, int TLN, double ED, int W, string C, string ET, string Col) : base(ED,W,C,ET,Col)
+        public Automobile(string RN, int NOD, int TV, string TT, string Man, int TLN, double ED, int W, string C, string ET, string Col, int FC) : base(ED,W,C,ET,Col)
         {
             registrationNumber = RN;
             numberOfDoors = NOD;
@@ -25,6 +27,7 @@ namespace CarRaceApp
             transmissionType = TT;
             manufacturer = Man;
             traficLicenseNumber = TLN;
+            fuelConsumption = FC;
         }
 
         void Repaint(string newColour)
