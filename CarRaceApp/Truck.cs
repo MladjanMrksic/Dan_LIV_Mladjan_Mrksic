@@ -17,7 +17,6 @@ namespace CarRaceApp
             freightCapacity = FC;
             height = H;
             seatNumber = SN;
-
         }
 
         void Load()

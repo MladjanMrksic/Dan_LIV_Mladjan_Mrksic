@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace CarRaceApp
@@ -14,6 +15,7 @@ namespace CarRaceApp
         public string transmissionType;
         public string manufacturer;
         public int traficLicenseNumber;
+        public Thread carThread;
 
         public Automobile(string RN, int NOD, int TV, string TT, string Man, int TLN, double ED, int W, string C, string ET, string Col) : base(ED,W,C,ET,Col)
         {
